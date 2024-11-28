@@ -200,7 +200,6 @@ medicamento registro(string fichero,int iterante){
 }
 ```
 ### la funcion de aplicacion
-la funcion aplicacion forma parte de la funcion fusion tiene un recorrido controlado de un arreglo formado de una idea que si el elemento recorrido de un arreglo en constante movimiento a nivel de construccion a partir de otro arreglo. si el elemento que esta en el arreglo en constante a base del arreglo anterior ya esta y vuelve a pasar otra vez retornara false de lo contrario si el elemento no esta retornara true.
 ```c++
 bool aplicacion(medicamento iterante[],medicamento elemento){
     
@@ -215,6 +214,7 @@ bool aplicacion(medicamento iterante[],medicamento elemento){
     return true;
 }
 ```
+la funcion aplicacion forma parte de la funcion fusion tiene un recorrido controlado de un arreglo formado de una idea que si el elemento recorrido de un arreglo en constante movimiento a nivel de construccion a partir de otro arreglo. si el elemento que esta en el arreglo en constante a base del arreglo anterior ya esta y vuelve a pasar otra vez retornara false de lo contrario si el elemento no esta retornara true.
 # La funcion fusion
 principalmente era necesario documentar las anteriores funciones para ver su naturealeza por partes ya que la funcion que realize el trabajo mas complejo a nivel logico es la funcion conocida como fusion 
 ```c++
