@@ -199,8 +199,22 @@ medicamento registro(string fichero,int iterante){
     return prueba[iterante];
 }
 ```
-
-
+### la funcion de aplicacion
+la funcion aplicacion forma parte de la funcion fusion tiene un recorrido controlado de un arreglo formado de una idea que si el elemento recorrido de un arreglo en constante movimiento a nivel de construccion a partir de otro arreglo. si el elemento que esta en el arreglo en constante a base del arreglo anterior ya esta y vuelve a pasar otra vez retornara false de lo contrario si el elemento no esta retornara true.
+```c++
+bool aplicacion(medicamento iterante[],medicamento elemento){
+    
+    for (size_t i = 0; iterante[i].stock != 0; i++)
+    {
+        if (elemento.codigo==iterante[i].codigo)
+        {
+            return false;
+        }
+        
+    }
+    return true;
+}
+```
 # La funcion fusion
 principalmente era necesario documentar las anteriores funciones para ver su naturealeza por partes ya que la funcion que realize el trabajo mas complejo a nivel logico es la funcion conocida como fusion 
 ```c++
@@ -280,8 +294,17 @@ int convertir_entero(string cadena){
 esta funcion toma de parametro una cadena de string que solamente contenga numeros enteros previamente validados de la funcion (askii_num) de no ser asi, esta funcion tiene defectos para calcular del string propuesto a la transformacion numerica, para empezar se calcula la longitud de la cadena que como un dato numerico para es decir si el elemento tiene 4 al sacarlo del .lenght() el arreglo numero tendra de espacios a ocupar 4, se itera cada elemento del string y se usa la conversion askii de -'0' para guardar del el string como un entero ya que el arreglo numero esta lleno, se procede a crear otras variable para acumular los resultados por cada iteracion descompuesta tal que dando un ejemplo
 
 ```
-5342 = 5000+300+40+2
-el primer dato obtenido sea la calculado por la longitud del string.
+5342 ramificado
+5
+4
+3
+2
+pero su longitud de string antes de convertirlos a un arreglo de numeros me indica su unidades y me quedaria
+5*1000
+3*100
+4*10
+2*1
+---5432----
 ```
 
 ### Validacion askii
